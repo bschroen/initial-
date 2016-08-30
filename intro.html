@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Intro to JavaScript</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+body{background-color:lightblue;}
+#head h1{text-align:center;}
+#display_time h2{color:#fff;}
+</style>
+
+<body>
+<header class="w3-panel" id="head">
+<h1>Intro to JavaScript</h1>
+</header>
+
+<div class="w3-panel w3-indigo" id="open">
+	<h2>Visible/Invisible</h2>
+		<button type="button" class="w3-btn-floating w3-sand" onclick="document.getElementById('open').style.display='none';
+				document.getElementById('invisible-open').style.display='block';">-
+		</button>
+</div>
+
+<div class="w3-panel">
+	<button type="button" id="invisible-open" class="w3-btn-floating w3-sand" style="display:none;" 
+			onclick="document.getElementById('open').style.display='block'">+
+	</button>
+</div>
+
+<div class="w3-panel w3-lime" id="display_time">
+	<h2>What time is it?</h2>
+		<button type="button" class="w3-btn w3-sand" 
+			onclick="document.getElementById('time').innerHTML=Date()">
+		What time is it?
+		</button>
+
+		<p id="time"></p>
+</div>
+
+<div class="w3-panel w3-red" id="display_greeting">
+	<h2>Hello!</h2>
+		<button type="button" class="w3-btn w3-purple"
+			onclick="document.getElementById('greet').innerHTML= 'Hi, Welcome!'"> Friendly Greeting 
+		</button>
+
+	<p id="greet"></p>
+
+</div>
+
+</body>
+</html>
